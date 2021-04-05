@@ -5,6 +5,7 @@ import Particles from "react-particles-js";
 import Hero from "./components/Hero";
 import AboutMe from "./components/AboutMe";
 import Portfolio from "./components/Portfolio";
+import Contacts from "./components/Contacts";
 
 function App() {
 	return (
@@ -40,6 +41,7 @@ function App() {
 			<Hero />
 			<Portfolio />
 			<AboutMe />
+			<Contacts />
 		</>
 	);
 }

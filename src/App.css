@@ -230,7 +230,7 @@ nav ul li {
 
 /**************** CONTACTS COMPONENT ****************/
 .contacts {
-	background: var(--primary-darkblue);
+	background: var(--secondary-darkblue);
 	padding: 3rem 0;
 }
 
@@ -253,7 +253,7 @@ nav ul li {
 	background: none;
 	resize: none;
 	border: 0;
-	border-bottom: 0.125rem solid var(--secondary-darkblue);
+	border-bottom: 0.125rem solid var(--primary-darkblue);
 	border-radius: 0;
 	color: var(--primary-lightblue);
 	outline: 0 !important;
@@ -270,7 +270,7 @@ nav ul li {
 .contacts textarea:focus {
 	background: transparent;
 	color: var(--primary-orange);
-	border-bottom: 0.125rem solid var(--secondary-darkblue);
+	border-bottom: 0.125rem solid var(--primary-darkblue);
 }
 
 .contacts textarea {
@@ -286,6 +286,8 @@ nav ul li {
 	border-radius: 0;
 	padding: 0.625rem 0.75rem 0.75rem 0.75rem;
 	color: var(--primary-white);
+	font-weight: 700;
+	letter-spacing: 0.1rem;
 }
 .contact-btn:hover,
 .contact-btn:focus {

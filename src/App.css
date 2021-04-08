@@ -55,7 +55,7 @@ nav ul li {
 }
 
 .navbar-nav > li > a.active,
-.navbar-nav > li > a.active:focus {
+.navbar-nav > li > a:focus {
 	border-top: 0.1875rem solid var(--primary-darkblue);
 }
 
@@ -77,7 +77,7 @@ nav ul li {
 	align-items: center;
 	text-align: center;
 	font-family: "Montserrat", sans-serif;
-	height: 90vh;
+	height: 100vh;
 
 	/* position: relative;
 	top: 0;
@@ -115,10 +115,11 @@ nav ul li {
 /*----- PARTICLES JS -----*/
 .tsparticles-canvas-el {
 	position: absolute;
-	height: 100vh !important;
+	height: 100vh;
 	width: 100vh;
 	z-index: 1;
 }
+
 
 /**************** PORTFOLIO ****************/
 .portfolio-wrapper {
@@ -171,6 +172,10 @@ nav ul li {
 	opacity: 70%;
 	transition: 0.3s ease-in-out;
 	cursor: pointer;
+}
+
+.popupbox-wrapper{
+	margin-top: 7rem;
 }
 
 .portfolio-image-popupbox {
@@ -347,4 +352,31 @@ textarea.form-control {
 	.contact-btn:focus {
 		transform: none;
 	}
+}
+
+
+/**************** FOOTER ****************/
+
+.footer{
+	background: var(--secondary-lightblue);
+	color: var(--secondary-black);
+	padding: 3rem;
+}
+
+.footer a{
+	text-decoration: none;
+	color: var(--secondary-black)
+}
+
+.footer a:hover{
+	text-decoration: none;
+	color: var(--secondary-darkblue);
+	cursor: pointer;
+}
+
+.footer p {
+	margin-bottom: 0;
+}
+.footer-text-center {
+	text-align: center;
 }

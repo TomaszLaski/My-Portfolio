@@ -44,6 +44,14 @@ const Portfolio = () => {
 			</>
 		);
 		PopupboxManager.open({ content });
+		PopupboxManager.update({
+			content,
+			config: {
+				titleBar: {
+					text: "Instagram Clone",
+				},
+			},
+		});
 	};
 
 	const openPopupboxNetflix = () => {
@@ -83,12 +91,19 @@ const Portfolio = () => {
 			</>
 		);
 		PopupboxManager.open({ content });
+		PopupboxManager.update({
+			content,
+			config: {
+				titleBar: {
+					text: "Netflix Clone",
+				},
+			},
+		});
 	};
-
 	const popupboxConfigNetflix = {
 		titleBar: {
 			enable: true,
-			text: "Project for education purpose only",
+			text: "Netflix Clone",
 		},
 		fadeIn: true,
 		fadeInSpeed: 500,
@@ -97,14 +112,14 @@ const Portfolio = () => {
 	const popupboxConfigInstagram = {
 		titleBar: {
 			enable: true,
-			text: "Project for education purpose only",
+			text: "Instagram Clone",
 		},
 		fadeIn: true,
 		fadeInSpeed: 500,
 	};
 
 	return (
-		<div className="portfolio-wrapper">
+		<div id="portfolio" className="portfolio-wrapper">
 			<div className="container">
 				<h1 className="text-uppercase text-center py-5">portfolio</h1>
 				<div className="image-box-wrapper row justify-content-center">

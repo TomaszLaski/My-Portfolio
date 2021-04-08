@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import AboutMe from "./components/AboutMe";
 import Portfolio from "./components/Portfolio";
 import Contacts from "./components/Contacts";
+import Footer from "./components/Footer";
 
 function App() {
 	return (
@@ -13,28 +14,38 @@ function App() {
 			<Particles
 				params={{
 					particles: {
-						color: {
-							value: ["#03674f"],
-						},
-						line_linked: {
-							color: "#78a1bb",
-							opacity: 1,
-						},
 						number: {
-							value: 25,
+							value: 20,
 							density: {
 								enable: true,
-								value_area: 900,
+								value_area: 800,
 							},
 						},
+						line_linked: {
+							enable: false,
+						},
+						move: {
+							speed: 1,
+							out_mode: "out",
+						},
 						shape: {
-							type: "circle",
-							stroke: {
-								width: 6,
-								color: "#2D62F7",
+							type:  "circle",
+						},
+						color: {
+							value: "#CCC",
+						},
+						size: {
+							value: 30,
+							random: false,
+							anim: {
+								enable: true,
+								speed: 4,
+								size_min: 10,
+								sync: false,
 							},
 						},
 					},
+					retina_detect: false,
 				}}
 			/>
 			<Navbar />
@@ -42,6 +53,7 @@ function App() {
 			<Portfolio />
 			<AboutMe />
 			<Contacts />
+			<Footer />
 		</>
 	);
 }

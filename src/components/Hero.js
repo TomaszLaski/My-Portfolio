@@ -4,7 +4,7 @@ import logo from "../laptop-img.svg";
 
 const Hero = () => {
 	return (
-		<div className="hero-wraper">
+		<div id="home" className="hero-wraper">
 			<div className="main-info">
 				<div class="text-container">
 					<h1>

@@ -8,7 +8,7 @@ const Hero = () => {
 			<div className="main-info">
 				<div class="text-container">
 					<h1>
-						The Fastest Learning <br /> Junior Web Developer
+						The Fastest Learning <br /> Junior Web Developer!
 					</h1>
 					<Typed
 						className="typed-text"
